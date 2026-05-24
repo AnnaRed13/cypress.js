@@ -1,7 +1,7 @@
 // Кастомные команды, которых нет в cypress
 
 Cypress.Commands.add('logout', () => {
-    cy.request('GET', 'https://api.pokemonbattle.me/v2/pokemons?page=1').then((response) => {
+    cy.request('GET', 'https://hiiire.com/').then((response) => {
         expect(response.status).to.eq(200);
     });
 });
